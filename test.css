@@ -1,0 +1,15 @@
+h1 {
+    font-size: 72px;
+    background-image: linear-gradient(110deg,
+            #c3bfd3,
+            #463f64,
+            #e2285c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div {
+    width: 200px;
+    height: 20px;
+    background-image: linear-gradient(to right, green 90%, gray 10%);
+}
