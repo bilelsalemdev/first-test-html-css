@@ -59,9 +59,13 @@
     margin: 0px;
 }
 
+
+/* header begins */
 header {
     background-color: var(--dark-blue);
     padding: var(--main-padding);
+
+
 }
 
 
@@ -89,6 +93,16 @@ header nav {
     line-height: 33.64px;
     color: white;
     text-decoration: none;
+}
+
+header nav .burger {
+    display: none;
+    font-size: 50px;
+    color: white;
+}
+
+header nav .open-close {
+    display: none;
 }
 
 header nav .menu ul {
@@ -257,3 +271,108 @@ header .footer ul li:first-of-type img {
 header .footer ul li:last-of-type img {
     opacity: 0.6;
 }
+
+@media (max-width:575px) {
+
+    /* responsive menu begins*/
+    .responsive-menu {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.822);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+
+    .responsive-menu ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        font-family: 'Open Sans';
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+
+    }
+
+    .responsive-menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--light-gray);
+        width: 100vw;
+        height: 100%;
+    }
+
+    .responsive-menu ul li:last-of-type {
+        border-bottom: none;
+    }
+
+    .responsive-menu ul li a {
+        color: white;
+        text-decoration: none;
+
+
+    }
+
+    .responsive-menu ul li:hover a {}
+
+    /* responsive menu  ends*/
+    .menu {
+        display: none;
+
+    }
+
+    header nav .burger {
+        display: block;
+    }
+
+    header nav .cancel {
+        display: none;
+        font-size: 50px;
+        color: white;
+
+    }
+
+    header nav .open-close {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .grid .right-grid-item {
+        display: none;
+    }
+
+    header .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    header .grid .left-grid-item .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .grid .left-grid-item h1 {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    header .footer {
+        display: none;
+    }
+
+    header .grid .left-grid-item .buttons a {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* header ends */
