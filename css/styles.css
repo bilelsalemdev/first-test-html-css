@@ -282,6 +282,7 @@ header .footer ul li:last-of-type img {
         position: absolute;
         display: flex;
         justify-content: center;
+        display: none;
         /* align-items: center; */
 
     }
@@ -385,3 +386,109 @@ header .footer ul li:last-of-type img {
 }
 
 /* header ends */
+/* services begins */
+.services {
+    /* max-width: 1400px; */
+    max-width: 1400px;
+
+    margin: 84px 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.services .grid {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin: 80px 20px;
+}
+
+.services h5 {
+    margin-bottom: 12px;
+    color: var(--dark-blue);
+}
+
+.services h1 {
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.services .grid .first-card,
+.services .grid .second-card,
+.services .grid .third-card {
+    max-width: 300px;
+
+}
+
+.services .grid .first-card p,
+.services .grid .second-card p,
+.services .grid .third-card p {
+    color: var(--gray);
+}
+
+.services .grid .first-card a,
+.services .grid .second-card a,
+.services .grid .third-card a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.services .grid .first-card a,
+.services .grid .second-card a,
+.services .grid .third-card a {
+    position: relative;
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 150px;
+}
+
+.services .grid .first-card a::after,
+.services .grid .second-card a::after,
+.services .grid .third-card a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-blue);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.services .grid .first-card a:hover::after,
+.services .grid .second-card a:hover::after,
+.services .grid .third-card a:hover::after {
+    display: none;
+}
+
+.services .grid img {
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .services h1 {
+        font-size: 30px;
+    }
+
+    .services .grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* services ends */
