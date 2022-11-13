@@ -272,7 +272,7 @@ header .footer ul li:last-of-type img {
     opacity: 0.6;
 }
 
-@media (max-width:575px) {
+@media (max-width:992px) {
 
     /* responsive menu begins*/
     .responsive-menu {
@@ -322,6 +322,11 @@ header .footer ul li:last-of-type img {
     /* responsive menu  ends*/
     .menu {
         display: none;
+
+    }
+
+    header .grid {
+        max-width: 500px;
 
     }
 
