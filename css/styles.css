@@ -341,6 +341,10 @@ header .footer ul li:last-of-type img {
         cursor: pointer;
     }
 
+    header {
+        padding: 20px;
+    }
+
     header .grid .right-grid-item {
         display: none;
     }
